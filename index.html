@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header>
-	    <a href="#" class="Logo"> <img src="images/logo.png" alt="Главная"></a>
+	    <a href="#" class="Logo" title="Главная"> <img src="images/logo.png" alt="Logo"></a>
         <ul class="menu">
             <li><a href="#" title="Объекты">Объекты</a></li>
             <li><a href="#" title="Компания">Компания</a></li>
@@ -19,7 +19,7 @@
             <li><a href="#" title="Акции">Акции</a></li>
             <li><a href="#" title="Контакты">Контакты</a></li>
         </ul>
-        <a href="#" title="Телефон">8 888 88 88 98 Звони скорее</a>
+        <a href="#" title="Телефон" class="contacts">8 888 88 88 98<br><span class="call_us">Звони скорее</span></a>
 	</header>
 	<main>
         <h1 class="found">Найдено 666 квартир</h1>
@@ -185,19 +185,22 @@
             <button class="see_more">Показать еще 20</button>
 
         </div>
+        <div class="contact_email">
+            <div class="text">
+                <h3>Успей купить</h3>
+                <p>подпишись и успей словить все акции</p>
+            </div>
+
+            <div class="e-mail">
+                <input type="email" id="email" name="email"><br>
+                <input type="checkbox" name="check_news"><label for="check_news" id="label">Подписаться на новости</label>
+            </div>
+
+            <input type="submit" value="Подписаться">
+        </div>
     </main>
-    <footer>
-        <div class="text">
-            <h3>Успей купить</h3>
-            <p>подпишись и успей словить все акции</p>
-        </div>
-
-        <div class="e-mail">
-            <input type="email" id="email" name="email">
-            <input type="checkbox"> <p>подписаться на новости</p>
-        </div>
-
-        <input type="submit" value="Подписаться">
-    </footer>
+   <footer>
+       
+   </footer>
 </body>
 </html>

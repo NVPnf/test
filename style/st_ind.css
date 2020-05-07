@@ -3,40 +3,127 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-html,
-body {
+html, body {
     width: 1928px;
-    height: 3727px;
-    background-color: #efecca;
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
 }
-
+main {
+    width: 1928px;
+    height: 3100px;
+    background-color: #efecca;
+    margin: 0 auto;
+}
+body li {
+    list-style-type: none;
+}
+body a {
+    text-decoration: none;
+}
+body a:hover {
+    text-decoration: underline;
+}
+body a:active {
+    text-shadow: 2px 2px 2px #ccc;
+}
 header {
     width: 1920px;
     height: 126px;
     background-color: #002f2f;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header a {
+    color: #fefefe;
+    font-size: 24px;
+    font-weight: 400;
+}
+header li {
+    float: left;
+}
+.menu {
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+.menu li a {
+    display: block;
+    margin: 0px 22px;
+}
+.Logo {
+    margin: 20px 107px;
+}
+.contacts {
+    margin: 40px 160px 29px 254px;
+}
+.call_us {
+    font-size: 20px;
+    font-weight: 400;
 }
 .found {
-    width: 535px;
     height: 50px;
     color: #002f2f;
-    font-family: "Open Sans";
     font-size: 48px;
     font-weight: 700;
+    padding-top: 70px;
+    padding-bottom: 115px;
+    margin-left: 434px;
 }
 .flats {
     width: 1280px;
     height: 2539px;
     background-color: #ffffff;
     margin: 0 auto;
+    padding-left: 81.5px;
+    padding-right: 79.5px;
 }
-
 .flat_card {
     width: 320px;
     height: 522px;
     border-radius: 3px;
     outline: 1px solid #a7a37e;
+    float: left;
+    margin: 26.5px;
+}
+.see_more {
+    width: 533px;
+    height: 72px;
+    border-radius: 3px;
+    background-color: #046380;
+    margin-top: 23.5px;
+    margin-left: 292px;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.12px
+}
+.contact_email {
+    width: 1279px;
+    height: 197px;
+    border-radius: 3px;
+    background-color: #046380;
+    margin: 71px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 64px;
+}
+#label,
+.text {
+    height: 14px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+input[type="submit"] {
+    width: 214px;
+    height: 47px;
+    border-radius: 2px;
+    background-color: #a7a37e;
+}
+footer {
+    height: 670px;
+    width: 1280px;
+    margin: 0 auto;
 }
