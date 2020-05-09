@@ -84,6 +84,33 @@ header li {
     font-size: 14px;
     font-weight: 400;
 }
+/*input[type="checkbox"] {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+}*/
+
+.checkbox {
+    position:relative;
+}
+.checkbox input[type=checkbox] {
+    display:none;
+}
+.checkbox label:after {
+    content: url(../images/star.png);
+    display:block;
+    height:14px;
+    width:14px;
+    position:absolute;
+    top: 10px;
+    right: 10px;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+    content: url(../images/star_check.png);
+    height:14px;
+    width:14px;
+}
 .selecttest {
     opacity: 0.7;
     color: #002f2f;
