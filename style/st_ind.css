@@ -92,9 +92,11 @@ header li {
     background-color: #ffffff;
     position: relative;
     border: none;
+    -webkit-appearance: none;
+    background: url(../images/select.png) no-repeat right;
 }
-.selecttest option {
-    text-align: center;
+.selecttest2 {
+    width: 87px;
 }
 .flat_card {
     width: 320px;
@@ -104,26 +106,90 @@ header li {
     float: left;
     margin: 26.5px;
     text-align: center;
+    position: relative;
+}
+.flat_card:nth-child(4):before {
+    content: "-10%";
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: red;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+.flat_card:nth-child(4):after {
+    content: "-шок цена";
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: red;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: absolute;
+    left: 55px;
+    top: 10px;
 }
 .flat_card a[title="Увеличить"] {
-    height: 60%;
+    height: 287px;
     display: block;
+    width: 300px;
+    line-height: 250px;
+    font-size: 0;
+    text-align: center;
 }
-.flat_card img[alt="План квартиры"] {}
+.flat_card img[alt="План квартиры"] {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
 .flat_card h3 {
     color: #002f2f;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
 }
-.flat_card ul li/*:first-of-type*/ {
-    width: 61px;
-    height: 35px;
+.flat_card .flat_area, .flat_card .flat_floor {
+    font-size: 18px;
+    font-weight: 400;
+}
+.flat_card ul {
+    margin-top: 26px;
+    margin-bottom: 40px;
+}
+.flat_card ul li:first-child {
     color: #046380;
     font-size: 16px;
     font-weight: 400;
+    border-left: 2px solid #046380;
+    padding-left: 10px;
+    margin-right: 20px;
+}
+.flat_card ul li {
+    width: 80px;
+    color: #313639;
+    font-size: 13px;
+    font-weight: 400;
     display: inline-block;
     text-align: left;
+}
+.free_or_not {
+    width: 320px;
+    height: 36px;
+    border-radius: 0 0 3px 3px;
+    background-color: #002f2f;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.72px;
+    border: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .see_more {
     width: 533px;
