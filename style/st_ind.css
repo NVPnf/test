@@ -92,24 +92,24 @@ header li {
 }*/
 
 .checkbox {
-    position:relative;
+    position: relative;
 }
 .checkbox input[type=checkbox] {
-    display:none;
+    display: none;
 }
 .checkbox label:after {
     content: url(../images/star.png);
-    display:block;
-    height:14px;
-    width:14px;
-    position:absolute;
+    display: block;
+    height: 14px;
+    width: 14px;
+    position: absolute;
     top: 10px;
     right: 10px;
 }
-.checkbox input[type=checkbox]:checked + label:after {
+.checkbox input[type=checkbox]:checked+label:after {
     content: url(../images/star_check.png);
-    height:14px;
-    width:14px;
+    height: 14px;
+    width: 14px;
 }
 .selecttest {
     opacity: 0.7;
@@ -184,8 +184,7 @@ header li {
     font-weight: 400;
 }
 .flat_card ul {
-    margin-top: 26px;
-    margin-bottom: 40px;
+    margin: 26px auto 40px;
 }
 .flat_card ul li:first-child {
     color: #046380;
@@ -202,6 +201,14 @@ header li {
     font-weight: 400;
     display: inline-block;
     text-align: left;
+}
+.flat_price {
+    color: #313639;
+    font-size: 24px;
+    font-weight: 700;
+}
+.flat_price:after {
+    content: ' руб.';
 }
 .free_or_not {
     width: 320px;
@@ -277,7 +284,6 @@ input[type="submit"] {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.96px;
-}
 }
 footer {
     height: 670px;
