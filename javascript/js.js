@@ -1,4 +1,4 @@
-let upButton = document.getElementById('buttonUp');
+let upButton = document.getElementById('scroll-up-button');
 window.onscroll = function() {
     scrollFunction()
 };
