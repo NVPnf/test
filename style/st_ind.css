@@ -13,12 +13,14 @@ main {
     height: 3100px;
     background-color: #efecca;
     margin: 0 auto;
+    position: relative;
 }
 body li {
     list-style-type: none;
 }
 body a {
     text-decoration: none;
+    color: #fefefe;
 }
 body a:hover {
     text-decoration: underline;
@@ -59,6 +61,21 @@ header li {
 .call_us {
     font-size: 20px;
     font-weight: 400;
+}
+#buttonUp {
+    width: 80px;
+    height: 80px;
+    background-color: #efecca;
+    position: fixed;
+    border: none;
+    display: none; 
+    right: 114px;
+    top: 50%;
+    cursor: pointer;
+}
+#buttonUp:hover {
+    background-color: #888557;
+    border-radius: 50%;
 }
 .found {
     height: 50px;
