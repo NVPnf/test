@@ -1,6 +1,6 @@
 let upButton = document.getElementById('buttonUp');
 window.onscroll = function() {
-    scrollFunction()
+    scrollFunction();
 };
 
 function scrollFunction() {
@@ -18,4 +18,22 @@ function goTop() {
         behavior: 'smooth'
     }); // For Chrome, Firefox, IE and Opera
 }
-// for safari not documentElement, only body
+
+let nodeList = document.querySelectorAll('.flat_card');
+// console.log(nodeList);
+let itemsArray = [];
+let parent = nodeList[0].parentNode;
+
+for (let i=0;i < nodeList.length; i++) {
+    itemsArray.push(parent.removeChildd(nodeList[i]));
+};
+
+itemsArray.sort(function(A, B) {
+   let textA = A.querySelector
+})
+
+
+
+function sort() {
+
+}
