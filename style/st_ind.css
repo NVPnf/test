@@ -62,21 +62,22 @@ header li {
     font-size: 20px;
     font-weight: 400;
 }
-#buttonUp {
+#scroll-up-button img {
     width: 80px;
     height: 80px;
     background-color: #efecca;
     position: fixed;
     border: none;
-    display: none; 
     right: 114px;
     top: 50%;
     cursor: pointer;
+    left: 5%;
 }
-#buttonUp:hover {
+#scroll-up-button:hover {
     background-color: #888557;
     border-radius: 50%;
 }
+#
 .found {
     height: 50px;
     color: #002f2f;
